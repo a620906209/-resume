@@ -1,0 +1,144 @@
+@mixin size($w,$h)
+  width: $w
+  height: $h  
+@mixin center
+  position: absolute
+  left: 50%
+  right: 50%
+  transform:  translateX(-50%) translateY(-50%)
+
+*
+  // border: solid 1px black
+  // max-width: 1200px
+  font-family: 微軟正黑體
+html
+  background: #E6E6E6
+html,body
+  width: 100%
+  height: 100%
+  margin: 0px
+  padding: 10px
+  display: flex
+  direction: column
+  flex-wrap: wrap
+  justify-content: center
+  background-color: white
+p
+  font-size: 16px
+  font-weight: bold
+  color: white
+hr
+  width: 0px
+
+.bg
+  width: 60%
+  display: flex
+  flex-direction: column
+  height: 1500px
+  background-color: #E6E6E6
+  flex-wrap: wrap
+
+
+    //personalinfo start//
+
+.photo
+  box-sizing: border-box
+  border: solid 5px white
+  +size(270px,270px)
+  background-color: white
+  background-image: url(https://i.imgur.com/z20IKUl.jpg)
+.personalinfo
+  +size(270px,1000px)
+  background-color: #595959
+.per_title
+  font-size: 30px
+  color: white
+  background-color: #00B0F0
+.s_title
+  font-size: 15px
+  color:  #888888
+
+
+    //work_experience start//
+.work_experience
+  width: 430px
+  background-color: white
+  margin-top: 10px
+  font-size: 25px
+.work_title
+  background-color: #00B0F0
+  color: white
+.work_content
+  font-size: 12px
+  text-align: left
+  line-height: 2em
+  margin-left: 4em
+  text-indent: -4em 
+  margin-top: 5px
+  text-align: justify
+  text-justify:inter-ideograph
+
+
+    //eduction start//
+.eduction
+  +size(430px,270px)
+  margin-top: 10px
+  background-color: white
+  display: flex
+  flex-direction: column
+  font-size: 25px
+.eduction_title
+  background-color: #00B0F0
+  color: white
+.e_content
+  display: flex
+  flex-wrap: wrap
+  text-indent: 0.8em
+.e_row
+  font-size: 15px
+  width: 150px
+  flex-grow: 1
+.e_content2
+  width: 200px
+  font-size: 20px
+  text-indent: 1em
+.e_row2
+  width: 120%
+  text-indent: 3em
+  font-size: 12px 
+
+
+    // language&skills start //
+.language_skill
+  +size(430px,270px)
+  background-color: white
+  margin-top: 10px
+.langue_title
+  font-size: 25px
+  background-color: #00B0F0
+  color: white
+.l_content
+  font-size: 18px
+
+
+    //page2 start//
+.bg2
+  margin-top: 10px
+  width: 60%
+  height: 1500px
+  background-color: #E6E6E6
+  padding: 50px
+
+.autobiography
+  +size(100%,1000px)
+.a_title
+  width: 270px
+  font-size: 40px
+  color: white
+  background-color: #00B0F0
+.a_content
+  margin-top: 2em
+  height: 100%
+  background-color: white
+  text-indent: 2em
+  white-space: pre-wrap

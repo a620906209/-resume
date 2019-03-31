@@ -1,0 +1,78 @@
+doctype html
+html(lang='en')
+  head
+    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+    meta(name='viewport', content='width=device-width,initial-scale=1')
+    link(rel='stylesheet', href='css/bootstrap.min.css')
+    link(rel='stylesheet', href='mycss/firstwebsass.css')
+    
+
+  body
+      .bg#app
+        .photo
+        .personalinfo
+          .per_title 個人資料
+          .s_title 姓名
+            p(v-for="item in personalinfo") {{item.name}}
+          .s_title  生日
+            p(v-for="item in personalinfo") {{item.birth}}
+          .s_title  籍貫
+            p(v-for="item in personalinfo") {{item.from}}
+          .s_title  現居住地
+            p(v-for="item in personalinfo") {{item.address}}
+          .s_title  電話
+            p(v-for="item in personalinfo") {{item.tel}}
+          .s_title  E-mail
+            p(v-for="item in personalinfo") {{item.mail}}
+        .work_experience
+          .work_title 工作經歷及學校專題WORKEXPERIENCE
+          .work_content 1.學校專題專案名稱：健康家族樹 app iOS版<br/>使用技術：php、mysql<br/>作業環境及工具：Apache server、Windows、MacOS  <br/>專案概述：是一款結合遺傳病和祖譜概念，透過 app 連結資料庫計算出每個人對於遺傳病的風險指數，讓每個人都能夠了解自己家中所淺在的風險，進而改善飲食習慣與作息，避免遺傳病上身。
+          .work_content 2.服務單位：冠柏實業股份有限公司 <br/>工作職位：CNC 車床人員 工作內容：機台上料、機台保養
+          .work_content 3.服務單位：盈予股份有限公司  <br/>工作職位：App 工程師 工作內容：網頁及 app 維護與開發 
+          .work_content 4.服務單位：空幾何蔬食餐廳 <br/>工作職位：廚房助手工作內容：協助出餐，食材準備，環境清潔 
+        .eduction 
+          .eduction_title 學歷及證照 EDUCATION&CERTIFICATION
+          .e_content
+            .e_row 中台科技大學    
+            .e_row 2011/9~2016/01 
+            .e_row 資料管理系
+          .e_content2 證照
+            .e_row2 TQC 網際網路及行動通訊(IM2) 
+            .e_row2 TQC 專案管理概論(PF3)
+            .e_row2 TQC 電子商務概論(EC3) 
+        .language_skill 
+          .langue_title 語言及技能 LANGUAGE&SKILLS 
+          .l_content 台語(流利) ｜ 國語(流利)  ｜ 英文(略懂) <hr>電腦技能：Word , PowerPoint , html, php, mysql 
+      .bg2
+        .autobiography
+          .a_title 自傳
+          .a_content 我是蔡松翰畢業於台中私立中臺科技大學，就讀資訊管理系，除了課程學習到的資訊相關的知識，也接 觸過統計、企業管理、行銷管理等課程。在剛上大一時毛遂自薦擔任了班代，很慶幸自己有這個機會，讓我 為這個班級服務，了解到各幹部的努力與辛勞，以及對於自己的能力能為班上做多少事，班級上大大小小的 事務的處理上讓我很有成就感，細心和耐心更是十分重要。   <hr>    升上大二時加入的系學會，系學會是個大家庭，學長姐會教導我們如何規劃和主辦一些活動，讓學弟妹 們參加，其中印象最深刻的就是系上的迎新露營，我們從找場地到規劃遊戲，編排了舞蹈，花了一個學期在 練習，就是想給新生們一個難忘的迎新派對，讓我在大學生活多了一項難忘的回憶。 進入專題製作的時候，在大二的暑假，我們開始了專題的開發，主題是以 iOS 為開發平台開發 APP，那 時的我負責後端資料庫的部分，執導老師要求我們，發現問題一起討論想出方法解決，所以大部分開發遇上 的問題都是由我們自己買書、上網看資料、上論壇等方式處理，雖然過程讓我們覺得身心疲憊，可是解決完 每個一個問題後都會覺得很有成就感，也讓我們在過程裡成長許多，還曾經在學校專題教室待到隔天早上六 點，這些經歷讓我永生難忘，也讓我明白一個專案的開發的辛苦和時間的花費，逐漸從中發現自己對於軟體 開發有著濃厚的興趣，能夠把事情處理的細膩並看到成果，讓我十分有成就感。    <hr>    之後參加全國大專校院資訊應用服務創新競賽，我們用小短劇的方式，讓評審們知道我們為什麼會想開 發這項 app，這項 app 對我們周遭的影響，也展示了使用方式，另外我們也到各個攤位觀察別人的作品，發 覺在很多方面我們的作品有許多能夠改進的地方，例如可能在功能上可以能有更多面向或是發展，或是操作 介面上可以在人性化，還有取得資料的方式做一些改變，雖然這次的比賽成績不盡理想，但是能有這次的經 驗讓我有新的眼界，希望對日後有所幫助。  <hr>    自己的期待踏入職場發揮所學；並且在工作中督促自己要不斷進步。另外，自己對本身的能力還有很多 不足，因此如果有機會能提升自己也會努力爭取，並考取相關證照藉此提升自己的競爭力。    感謝您閱讀我的自傳，懇請您給我一次面談的機會，未來，若有機會為貴公司效力，我必定會全力以赴， 創造自我價值，不辜負這個面試機會。    最後非常感謝您撥空審閱我的履歷。
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ... start javascript ... -->
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+    script(src='js/bootstrap.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.22/vue.js')
+    script(src='myjs/myjs.js')
